@@ -1,24 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
-import { GuideListComponent } from './guide-list/guide-list.component';
-import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
-    GuideListComponent
+    MainComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
